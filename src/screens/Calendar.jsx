@@ -7,8 +7,6 @@ export default function CalendarScreen() {
   const [date, setDate] = useState(() => moment());
 
   const makeCalendar = () => {
-    // const [calendar, setCalendar] = useState([]);
-
     const startWeek = date.clone().startOf("month").week();
     const endWeek =
       date.clone().endOf("month").week() === 1
